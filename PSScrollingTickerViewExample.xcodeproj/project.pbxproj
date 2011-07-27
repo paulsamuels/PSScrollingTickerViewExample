@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E115A2C113E0CD4D002F45A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E115A2C013E0CD4D002F45A4 /* UIKit.framework */; };
+		E115A2C313E0CD4D002F45A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E115A2C213E0CD4D002F45A4 /* Foundation.framework */; };
+		E115A2C513E0CD4D002F45A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E115A2C413E0CD4D002F45A4 /* CoreGraphics.framework */; };
+		E115A2CB13E0CD4D002F45A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E115A2C913E0CD4D002F45A4 /* InfoPlist.strings */; };
+		E115A2CD13E0CD4D002F45A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A2CC13E0CD4D002F45A4 /* main.m */; };
+		E115A2D113E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A2D013E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m */; };
+		E115A2D413E0CD4D002F45A4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E115A2D213E0CD4D002F45A4 /* MainWindow.xib */; };
+		E115A2D713E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A2D613E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m */; };
+		E115A2DA13E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E115A2D813E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E115A2BC13E0CD4D002F45A4 /* PSScrollingTickerViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSScrollingTickerViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E115A2C013E0CD4D002F45A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E115A2C213E0CD4D002F45A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E115A2C413E0CD4D002F45A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E115A2C813E0CD4D002F45A4 /* PSScrollingTickerViewExample-Info.plist */ = {isa = PBXFileReference; path = "PSScrollingTickerViewExample-Info.plist"; sourceTree = "<group>"; };
+		E115A2CA13E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E115A2CC13E0CD4D002F45A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E115A2CE13E0CD4D002F45A4 /* PSScrollingTickerViewExample-Prefix.pch */ = {isa = PBXFileReference; path = "PSScrollingTickerViewExample-Prefix.pch"; sourceTree = "<group>"; };
+		E115A2CF13E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.h */ = {isa = PBXFileReference; path = PSScrollingTickerViewExampleAppDelegate.h; sourceTree = "<group>"; };
+		E115A2D013E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSScrollingTickerViewExampleAppDelegate.m; sourceTree = "<group>"; };
+		E115A2D313E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E115A2D513E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.h */ = {isa = PBXFileReference; path = PSScrollingTickerViewExampleViewController.h; sourceTree = "<group>"; };
+		E115A2D613E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSScrollingTickerViewExampleViewController.m; sourceTree = "<group>"; };
+		E115A2D913E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PSScrollingTickerViewExampleViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E115A2B913E0CD4D002F45A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E115A2C113E0CD4D002F45A4 /* UIKit.framework in Frameworks */,
+				E115A2C313E0CD4D002F45A4 /* Foundation.framework in Frameworks */,
+				E115A2C513E0CD4D002F45A4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E115A2B113E0CD4D002F45A4 = {
+			isa = PBXGroup;
+			children = (
+				E115A2C613E0CD4D002F45A4 /* PSScrollingTickerViewExample */,
+				E115A2BF13E0CD4D002F45A4 /* Frameworks */,
+				E115A2BD13E0CD4D002F45A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E115A2BD13E0CD4D002F45A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E115A2BC13E0CD4D002F45A4 /* PSScrollingTickerViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E115A2BF13E0CD4D002F45A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E115A2C013E0CD4D002F45A4 /* UIKit.framework */,
+				E115A2C213E0CD4D002F45A4 /* Foundation.framework */,
+				E115A2C413E0CD4D002F45A4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E115A2C613E0CD4D002F45A4 /* PSScrollingTickerViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				E115A2CF13E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.h */,
+				E115A2D013E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m */,
+				E115A2D213E0CD4D002F45A4 /* MainWindow.xib */,
+				E115A2D513E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.h */,
+				E115A2D613E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m */,
+				E115A2D813E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib */,
+				E115A2C713E0CD4D002F45A4 /* Supporting Files */,
+			);
+			path = PSScrollingTickerViewExample;
+			sourceTree = "<group>";
+		};
+		E115A2C713E0CD4D002F45A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E115A2C813E0CD4D002F45A4 /* PSScrollingTickerViewExample-Info.plist */,
+				E115A2C913E0CD4D002F45A4 /* InfoPlist.strings */,
+				E115A2CC13E0CD4D002F45A4 /* main.m */,
+				E115A2CE13E0CD4D002F45A4 /* PSScrollingTickerViewExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E115A2BB13E0CD4D002F45A4 /* PSScrollingTickerViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E115A2DD13E0CD4D002F45A4 /* Build configuration list for PBXNativeTarget "PSScrollingTickerViewExample" */;
+			buildPhases = (
+				E115A2B813E0CD4D002F45A4 /* Sources */,
+				E115A2B913E0CD4D002F45A4 /* Frameworks */,
+				E115A2BA13E0CD4D002F45A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSScrollingTickerViewExample;
+			productName = PSScrollingTickerViewExample;
+			productReference = E115A2BC13E0CD4D002F45A4 /* PSScrollingTickerViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E115A2B313E0CD4D002F45A4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E115A2B613E0CD4D002F45A4 /* Build configuration list for PBXProject "PSScrollingTickerViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E115A2B113E0CD4D002F45A4;
+			productRefGroup = E115A2BD13E0CD4D002F45A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E115A2BB13E0CD4D002F45A4 /* PSScrollingTickerViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E115A2BA13E0CD4D002F45A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E115A2CB13E0CD4D002F45A4 /* InfoPlist.strings in Resources */,
+				E115A2D413E0CD4D002F45A4 /* MainWindow.xib in Resources */,
+				E115A2DA13E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E115A2B813E0CD4D002F45A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E115A2CD13E0CD4D002F45A4 /* main.m in Sources */,
+				E115A2D113E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m in Sources */,
+				E115A2D713E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E115A2C913E0CD4D002F45A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E115A2CA13E0CD4D002F45A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E115A2D213E0CD4D002F45A4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E115A2D313E0CD4D002F45A4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E115A2D813E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E115A2D913E0CD4D002F45A4 /* en */,
+			);
+			name = PSScrollingTickerViewExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E115A2DB13E0CD4D002F45A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E115A2DC13E0CD4D002F45A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E115A2DE13E0CD4D002F45A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSScrollingTickerViewExample/PSScrollingTickerViewExample-Prefix.pch";
+				INFOPLIST_FILE = "PSScrollingTickerViewExample/PSScrollingTickerViewExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E115A2DF13E0CD4D002F45A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSScrollingTickerViewExample/PSScrollingTickerViewExample-Prefix.pch";
+				INFOPLIST_FILE = "PSScrollingTickerViewExample/PSScrollingTickerViewExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E115A2B613E0CD4D002F45A4 /* Build configuration list for PBXProject "PSScrollingTickerViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E115A2DB13E0CD4D002F45A4 /* Debug */,
+				E115A2DC13E0CD4D002F45A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E115A2DD13E0CD4D002F45A4 /* Build configuration list for PBXNativeTarget "PSScrollingTickerViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E115A2DE13E0CD4D002F45A4 /* Debug */,
+				E115A2DF13E0CD4D002F45A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E115A2B313E0CD4D002F45A4 /* Project object */;
+}
