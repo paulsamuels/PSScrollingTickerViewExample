@@ -16,6 +16,7 @@
 		E115A2D413E0CD4D002F45A4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E115A2D213E0CD4D002F45A4 /* MainWindow.xib */; };
 		E115A2D713E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A2D613E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m */; };
 		E115A2DA13E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E115A2D813E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.xib */; };
+		E115A2E313E0CDD4002F45A4 /* PSScrollingTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A2E213E0CDD4002F45A4 /* PSScrollingTickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		E115A2C013E0CD4D002F45A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E115A2C213E0CD4D002F45A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E115A2C413E0CD4D002F45A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E115A2C813E0CD4D002F45A4 /* PSScrollingTickerViewExample-Info.plist */ = {isa = PBXFileReference; path = "PSScrollingTickerViewExample-Info.plist"; sourceTree = "<group>"; };
+		E115A2C813E0CD4D002F45A4 /* PSScrollingTickerViewExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSScrollingTickerViewExample-Info.plist"; sourceTree = "<group>"; };
 		E115A2CA13E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E115A2CC13E0CD4D002F45A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E115A2CE13E0CD4D002F45A4 /* PSScrollingTickerViewExample-Prefix.pch */ = {isa = PBXFileReference; path = "PSScrollingTickerViewExample-Prefix.pch"; sourceTree = "<group>"; };
-		E115A2CF13E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.h */ = {isa = PBXFileReference; path = PSScrollingTickerViewExampleAppDelegate.h; sourceTree = "<group>"; };
+		E115A2CE13E0CD4D002F45A4 /* PSScrollingTickerViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSScrollingTickerViewExample-Prefix.pch"; sourceTree = "<group>"; };
+		E115A2CF13E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSScrollingTickerViewExampleAppDelegate.h; sourceTree = "<group>"; };
 		E115A2D013E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSScrollingTickerViewExampleAppDelegate.m; sourceTree = "<group>"; };
 		E115A2D313E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		E115A2D513E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.h */ = {isa = PBXFileReference; path = PSScrollingTickerViewExampleViewController.h; sourceTree = "<group>"; };
+		E115A2D513E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSScrollingTickerViewExampleViewController.h; sourceTree = "<group>"; };
 		E115A2D613E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSScrollingTickerViewExampleViewController.m; sourceTree = "<group>"; };
 		E115A2D913E0CD4D002F45A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PSScrollingTickerViewExampleViewController.xib; sourceTree = "<group>"; };
+		E115A2E113E0CDD4002F45A4 /* PSScrollingTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScrollingTickerView.h; sourceTree = "<group>"; };
+		E115A2E213E0CDD4002F45A4 /* PSScrollingTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScrollingTickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		E115A2C613E0CD4D002F45A4 /* PSScrollingTickerViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				E115A2E013E0CDAD002F45A4 /* PSScrollingTickerView */,
 				E115A2CF13E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.h */,
 				E115A2D013E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m */,
 				E115A2D213E0CD4D002F45A4 /* MainWindow.xib */,
@@ -99,6 +103,15 @@
 				E115A2CE13E0CD4D002F45A4 /* PSScrollingTickerViewExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E115A2E013E0CDAD002F45A4 /* PSScrollingTickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E115A2E113E0CDD4002F45A4 /* PSScrollingTickerView.h */,
+				E115A2E213E0CDD4002F45A4 /* PSScrollingTickerView.m */,
+			);
+			name = PSScrollingTickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				E115A2CD13E0CD4D002F45A4 /* main.m in Sources */,
 				E115A2D113E0CD4D002F45A4 /* PSScrollingTickerViewExampleAppDelegate.m in Sources */,
 				E115A2D713E0CD4D002F45A4 /* PSScrollingTickerViewExampleViewController.m in Sources */,
+				E115A2E313E0CDD4002F45A4 /* PSScrollingTickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

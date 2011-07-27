@@ -3,42 +3,38 @@
 //  PSScrollingTickerViewExample
 //
 //  Created by Paul Samuels on 27/07/2011.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 www.paul-samuels.com. All rights reserved.
 //
 
 #import "PSScrollingTickerViewExampleViewController.h"
+#import "PSScrollingTickerView.h"
 
 @implementation PSScrollingTickerViewExampleViewController
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  
+  PSScrollingTickerView *tickerView = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(10, 10, 100, 50) 
+                                                                              text:@"Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!" 
+                                                                             delay:2
+                                                               scrollSpeedModifier:PSScrollingTickerViewFast];
+  [self.view addSubview:tickerView];
+  
+  PSScrollingTickerView *tickerView2 = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(10, 70, 100, 50)];
+  tickerView2.text = @"Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!";
+  tickerView2.delay = 4;
+  tickerView2.speedModifier = PSScrollingTickerViewMedium;
+  
+  [self.view addSubview:tickerView2];
 }
-*/
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+  return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
