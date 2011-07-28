@@ -18,7 +18,10 @@ const float PSScrollingTickerViewSuperSlow;
 @property (nonatomic, copy)   NSString *text;
 @property (nonatomic, assign) CGFloat  speedModifier;
 @property (nonatomic, assign) CGFloat  delay;
+@property (nonatomic, retain) UIFont   *font;
+@property (nonatomic, retain) UIColor  *textColor;
 
-- (id)initWithFrame:(CGRect)frame text:(NSString *)text delay:(CGFloat)delay scrollSpeedModifier:(CGFloat)tickerSpeedModifier;
+- (id)initWithFrame:(CGRect)frame text:(NSString *)text delay:(CGFloat)delay scrollSpeedModifier:(CGFloat)tickerSpeedModifier font:(UIFont *)font;
+- (void)scroll;
 
 @end
