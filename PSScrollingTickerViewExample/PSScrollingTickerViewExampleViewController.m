@@ -9,7 +9,18 @@
 #import "PSScrollingTickerViewExampleViewController.h"
 #import "PSScrollingTickerView.h"
 
+@interface PSScrollingTickerViewExampleViewController ()
+
+@property (nonatomic, retain) PSScrollingTickerView *tickerView;
+
+- (void)configureScrollingTickerUsingDesignatedInitMethod;
+- (void)configureScrollingTickerTheLongWay;
+
+@end
+
 @implementation PSScrollingTickerViewExampleViewController
+
+@synthesize tickerView = _tickerView;
 
 #pragma mark - View lifecycle
 
@@ -17,20 +28,40 @@
 {
   [super viewDidLoad];
   
-  PSScrollingTickerView *tickerView = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(10, 10, 100, 50) 
-                                                                              text:@"Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!" 
-                                                                             delay:2
-                                                               scrollSpeedModifier:PSScrollingTickerViewFast];
-  [self.view addSubview:tickerView];
+  [self configureScrollingTickerUsingDesignatedInitMethod];
   
-  PSScrollingTickerView *tickerView2 = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(10, 70, 100, 50)];
-  tickerView2.text = @"Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!";
-  tickerView2.delay = 4;
-  tickerView2.speedModifier = PSScrollingTickerViewMedium;
-  
-  [self.view addSubview:tickerView2];
+  [self configureScrollingTickerTheLongWay];
 }
 
+- (void)configureScrollingTickerUsingDesignatedInitMethod
+{
+  PSScrollingTickerView *tickerView = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(20, 28, 200, 50) 
+                                                                              text:@"Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!" 
+                                                                             delay:2
+                                                               scrollSpeedModifier:PSScrollingTickerViewFast 
+                                                                              font:nil];
+  self.tickerView = tickerView;
+  [self.view addSubview:tickerView];
+  [tickerView release]; tickerView = nil;
+}
+
+- (void)configureScrollingTickerTheLongWay
+{
+  PSScrollingTickerView *tickerView2 = [[PSScrollingTickerView alloc] initWithFrame:CGRectMake(20, 140, 280, 50)];
+  tickerView2.text = @"Hello, World! Hello, World!";
+  tickerView2.delay = 4;
+  tickerView2.speedModifier = PSScrollingTickerViewMedium;
+  tickerView2.font = [UIFont systemFontOfSize:18];
+  tickerView2.textColor = [UIColor purpleColor];
+  
+  [self.view addSubview:tickerView2];
+  [tickerView2 release]; tickerView2 = nil;
+}
+
+- (IBAction)scrollTapped:(id)sender
+{
+  [self.tickerView scroll];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

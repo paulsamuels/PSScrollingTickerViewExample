@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class PSScrollingTickerView;
+
 @interface PSScrollingTickerViewExampleViewController : UIViewController
+
+- (IBAction)scrollTapped:(id)sender;
 
 @end
